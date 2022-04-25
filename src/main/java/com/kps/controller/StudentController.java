@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,10 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kps.model.Student;
 import com.kps.service.StudentService;
 
+
 @RestController
+
 public class StudentController {
 	
-	static final Logger logger=LogManager.getLogger(StudentController.class.getName());
+	//static final Logger logger=LogManager.getLogger(StudentController.class.getName());
 	@Autowired
 	private StudentService studentService;
 	@GetMapping("/home")
