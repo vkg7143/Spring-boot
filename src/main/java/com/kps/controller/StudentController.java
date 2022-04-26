@@ -29,7 +29,7 @@ public class StudentController {
 	private StudentService studentService;
 	@GetMapping("/home")
 	public String getHome() {
-		return "Welco me to student management";
+		return "Welcome to student management";
 	}
 	@GetMapping("/")
 	public List<Student> getAllStudents(){
